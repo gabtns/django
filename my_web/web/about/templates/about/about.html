@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/static/about.css">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,200" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
+</head>
+
+
+
+
+
+{% load static %}{% block content %}
+
+</head><span class="material-symbols-outlined">
+    <a href=" {% url 'web1' %}">reply</a>
+</span>
+<header>
+    <div class="header-main">
+        <p>Hola. <br> Soy Gabriel</p>
+    </div>
+
+</header>
+
+
+<body>
+
+    <div class="content">
+        {% for de in demi %}
+        <div class="foto-personal"> </div>
+
+        <img src="{{de.imagen}}" alt="">
+        <div class=" content-parrafos ">
+            <h2>{{de.titulo}}</h2>
+            <p>{{de.descripcion}}</p>
+
+        </div>
+    </div>{% endfor %}
+    <!--
+    <div class="content-2 ">
+        <div class="content-parrafos-2 ">
+            <p>En el año 2020 tuve la desafortuna experiencia de perder a mi maddre por un cancer estomacal, el cual fue el peor golpe que padeci. Fue una prueba en todos los niveles, emocional, fisico, psicologico. A la par que me hice cargo de mi hermano
+                menor llamado Bruno, él nacio en el 2007, actualmente tien 16 años y esta cursando la secundaria<a href="https://www.argentino.com.ar/escuela-tecnica-nro-392-juramento-de-la-bandera-egb3-polimodal-F1506C1021DD1 ">(Juramente de la bandera 392)</a>con
+                buenos promedios. Es una gran prueba mas con los tiempos dificiles donde la juventud esta todo el tiempo expuesta al camino facil y rapido, aun asi la importancia del respeto y al transparencia hace que siempre se puedan abordar los problemas
+                de una forma madura y coherente.</p>
+        </div>
+        <div class="fotos-personales-2 "> <img src="C:\Users\PC\Desktop\pagina_web_app\images\IMG_20171012_142843647.jpg " alt=" "></div>
+    </div>
+    <div class="content-3 ">
+        <div> <img src="C:\Users\PC\Desktop\pagina_web_app\images\mama-2.png " alt=" "></div>
+        <div class="content-parrafos-3 ">
+            <p>Pues bien, bien este es un pequeño homenaje a la mujer que en su lecho de muerte me dijo.. "pase lo que pase, debes ser fuerte y vanzar cada dia de tu vida ", es un hecho que no podia dejar pasar por alto, su nombre era Norma Perez, mi madre.
+                Una persona que se sacrifico por sus hijos dandole el 100% de su esfuerzo en conseguir todo lo podia en pos de sus hijos.Para todos aquellos que estuvimos a su lado siempre sabemos lo fuerte que fue y por sobre todo la enseñanza que nos
+                dejo, JAMAS RENDIRSE.
+
+            </p>
+        </div>
+
+    </div>-->
+    {% endblock %}
+    <hr>
+    <footer>
+        <center>
+            <p>&copy; Gabriel alegre</p>
+        </center>
+    </footer>
+</body>
+
+</html>
+
+</html>

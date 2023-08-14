@@ -1,0 +1,105 @@
+            @import url(//fonts.googleapis.com/css?family=Open+Sans:400,700,800,300);
+            body {
+                background-color: #FFFFFF;
+            }
+            
+            h1 {
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            }
+            
+            span {
+                color: #FFFFFF;
+                font-weight: 800;
+                text-align: left;
+            }
+            
+            h1 {
+                text-align: left;
+            }
+            
+            .listas ul li {
+                display: inline-block;
+                float: right;
+                font-weight: 100;
+                color: #FFFFFF;
+            }
+            
+            .listas ul li :hover {
+                color: #ff2fb8;
+            }
+            
+            li {
+                padding: 2%;
+            }
+            
+            .container-real {
+                color: #FFFFFF;
+                background-color: #284b63;
+                padding: 80px 5%;
+                text-align: left;
+                font-family: Arial, Helvetica, sans-serif;
+            }
+            
+            .btn {
+                display: inline-block;
+                color: white;
+                font-weight: 500;
+                font-size: 20px;
+                background: #549DA0;
+                border: none;
+                border-radius: 5px;
+                border: 1px solid black;
+                padding: 12px 16px;
+                cursor: pointer;
+                margin-left: 25%;
+                float: none;
+            }
+            
+            .btn:hover {
+                background: #468486;
+            }
+            
+            .feature {
+                margin-top: 3%;
+                background-color: #549DA0;
+                display: inline-block;
+                width: 33%;
+                image-orientation: 0deg;
+                border-radius: 20px;
+            }
+            
+            .feature img {
+                width: 30%;
+                align-self: center;
+            }
+            
+            .feature img p {
+                font-size: 1rem;
+            }
+            
+            img {
+                display: block;
+                align-items: center;
+            }
+            
+            p {
+                text-align: center;
+            }
+            
+            .media {
+                background-color: #008694;
+                margin-top: 3%;
+                padding: 80px 0;
+            }
+            
+            .media_a {
+                margin-top: 3%;
+                background-color: #00bcb8;
+                padding: 80px 0;
+            }
+            
+            .media_media {
+                text-align: center;
+            }
+            
+            @media screen and (max-width: 480px) {}

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+{% load static %}
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/static/mio.css">
+</head>
+
+<body>
+
+    <div class="header-second">
+        <ul>
+            <li> <a href=" {% url 'about' %}">About</li></a>
+                <li> <a href="{%  url 'formulario' %}">Contactame</li></a>
+                    <li><a href="#">Ideas</li></a>
+                        <li><a href="{% url 'web2' %}">Proyectos</li></a>
+        </ul>
+    </div>
+    <header class="main-header">
+        <div class="header-main">
+            <p>Hola. <br> Soy Gabriel</p>
+        </div>
+
+    </header>
+    <div class="imagenes"><img src=" {% static '\images\flechas.png' %} " alt="10px"></div>
+
+    <section class="lista-main">
+        <ul>
+            <li>Analista funcional de Sistemas informaticos</li>
+            <li>Analista de Datos </li>
+            <li>Desarrollador de paginas web Jr.</li>
+            <li>Freelance</li>
+        </ul>
+
+    </section>
+    <div class="insertar">
+        <div class="triangulo"></div>
+        <aside class=" definition ">
+            <p>Me llamo Gabriel Alegre soy de Rosario,StaFe,Argentina.En el año 2022 me recibi como analista funcional de sistema informaticos y me dedique aprender la ciencia de datos y programacion en python. Durante este tiempo realice algunas aplicaciones
+                de escritorios como calculadoras y blog de notas en PyQT5, ademas de realizar muchos analisis de datos utilizando machine learning al utilizar datos para predecir comportamientos lo cual lo hice con Google colab. En ultima instancia estoy
+                realizando paginas web y aplicaciones con Django ademas de aprender el lenguaje de la web, JavaScript.</p>
+        </aside>
+    </div>
+    <div class="circle"></div>
+    <hr>
+    <footer>
+        <center>
+            <p>&copy; Gabriel alegre</p>
+        </center>
+        <img src="C:\Users\PC\Desktop\pagina_web_app\images\linkedin.png" alt="">
+        <img src="C:\Users\PC\Desktop\pagina_web_app\images\facebook.png" alt="">
+    </footer>
+</body>
+
+</html>

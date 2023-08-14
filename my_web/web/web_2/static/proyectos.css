@@ -1,0 +1,215 @@
+    /*Roboto Slaf 400, 700
+  Roboto 400 500 700 900
+  Roboto Mono 400 500 700
+*/
+    
+    @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;700&family=Roboto+Slab:wght@400;700&family=Roboto:wght@400;500;700;900&display=swap');
+    * {
+        padding: 10px;
+        margin: 0;
+        box-sizing: border-box;
+    }
+    
+    body {
+        font-family: 'Roboto Mono', sans-serif;
+        font-family: 400;
+        background-color: #000;
+    }
+    
+    .home-body {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    /* HEADER 
+Social*/
+    
+    .header img {
+        width: 100px;
+        height: 100px;
+        float: right;
+        margin-right: 5%;
+        background-color: black;
+    }
+    
+    .header {
+        margin-top: 0%;
+        margin-bottom: 5%;
+    }
+    
+    .title h2 {
+        color: white;
+    }
+    
+    .header-main {
+        font-size: large;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        background-color: black;
+        color: #fff;
+    }
+    
+    .header-main p {
+        font-size: 73px;
+        font-weight: 900;
+        padding-left: 6%;
+        padding-top: 1%;
+        margin-top: 0%;
+        margin-bottom: 8%;
+    }
+    
+    .colab img {
+        float: right;
+        width: 150px;
+        height: 150px;
+        padding: 4%;
+        margin: 10px;
+        margin-top: 5%;
+    }
+    
+    .material-symbols-outlined {
+        float: right;
+        margin-right: 5%;
+        margin-top: 6%;
+        color: #eb253C;
+        font-variation-settings: 'FILL' 10, 'wght' 400, 'GRAD' 0, 'opsz' 48;
+    }
+    
+    .material-symbols-outlined a {
+        text-decoration: none;
+        margin-right: 5%;
+        margin-top: 6%;
+        font-size: 400%;
+        color: #e6162e;
+    }
+    
+    .posts {
+        color: white;
+        display: inline;
+        margin-bottom: 5%;
+    }
+    
+    .a:hover {
+        transform: scale(1.40);
+        transition: all 0.7s;
+        background-color: lightcoral;
+    }
+    
+    .social {
+        background-color: #e6162e;
+        width: 100%;
+        height: 50px;
+        display: grid;
+    }
+    
+    .social-icons {
+        width: 250px;
+        height: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-self: end;
+        margin-right: 50px;
+    }
+    
+    .social-icons a {
+        color: #fff;
+        font-size: 28px;
+    }
+    
+    .social-icons a:hover {
+        color: #616161;
+    }
+    
+    .blogs-btn {
+        text-decoration: none;
+        color: #000;
+        border: 1px solid #e6162e;
+        padding: 10px 15px;
+        font-size: 14px;
+        color: #fff;
+    }
+    
+    .posts {
+        padding: 0 30px 20px;
+    }
+    
+    .posts a:hover {
+        color: red;
+    }
+    
+    .posts h2 {
+        color: #fff;
+        padding-bottom: 5%;
+    }
+    
+    .posts h3 {
+        color: #fff;
+        padding-bottom: 5%;
+    }
+    
+    .posts-blog {
+        display: inline-flexbox;
+        padding: 10px;
+        max-width: 32%;
+        margin-top: 5%;
+        margin-bottom: 20px;
+    }
+    
+    .posts-blog img {
+        width: 100%;
+    }
+    
+    .posts-blog flotar {
+        float: right;
+        display: inline;
+    }
+    
+    .posts-blog h2 {
+        color: #fff;
+        margin: 20px 0;
+    }
+    
+    .posts-blog h4 {
+        color: #fff;
+        margin: 20px 0;
+    }
+    
+    .posts-blog p {
+        color: #fff;
+        margin-bottom: 35px;
+        padding-top: 5%;
+        font-weight: 500;
+        font-size: x-large;
+    }
+    
+    .blogs-btn a {
+        padding-left: 10%;
+    }
+    
+    .blogs-btn a {
+        float: right;
+        padding-left: 10%;
+        padding-top: 10%;
+        padding-bottom: 10%;
+    }
+    /*FOOTER 
+==================================*/
+    
+    footer {
+        width: 100%;
+        height: 80px;
+        background-color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    footer p {
+        margin-top: 10%;
+        margin-bottom: 10%;
+        color: #fff;
+        text-align: center;
+        font-size: xx-large;
+    }

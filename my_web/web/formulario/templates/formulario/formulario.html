@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog Personal</title>
+    <link rel="stylesheet" href="/static/formulario.css">
+</head>
+
+
+<body>
+    <header class="main-header">
+        <div class="header-main">
+            <p>Hola. <br> Soy Gabriel</p>
+        </div>
+
+    </header>
+
+    <div class="insertar">
+        <aside class=" definition ">
+            <center>
+                <form action="" method="POST" class="form">
+                    {% csrf_token %}
+
+                    <h2>Contactame</h2>
+                    <div class="formulate ">{{form.nombre}}</div>
+                    <div class="formulate ">{{form.empresa}}</div>
+                    <div class="formulate ">{{form.email}}</div>
+                    <div class="formulate ">{{form.texto}}</div>
+                    <center>
+                        <button>Send Message</button></center>
+
+                </form>
+
+        </aside>
+    </div>
+    </center>
+    <hr>
+    <footer>
+        <center>
+            <p>&copy; Gabriel alegre</p>
+        </center>
+
+    </footer>
+</body>
+
+</html>
