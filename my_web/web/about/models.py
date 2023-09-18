@@ -5,7 +5,7 @@ from django.db import models
 class sobre_mi(models.Model):
     titulo = models.CharField(max_length=45,verbose_name="TITULO")
     descripcion = models.TextField(max_length=2000,verbose_name="DESCRIPCION")
-    imagen = models.ImageField(upload_to = "sobre",verbose_name="IMAGEN")
+    imagen = models.ImageField(verbose_name="IMAGEN",upload_to = 'sobre')
 
     class Meta:
         verbose_name = "sobre_mi"

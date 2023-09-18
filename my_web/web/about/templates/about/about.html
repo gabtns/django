@@ -1,24 +1,8 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/static/about.css">
-    <title>Document</title>
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,200" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Parisienne&display=swap" rel="stylesheet">
-</head>
-
-
-
-
-
-{% load static %}{% block content %}
-
+{% load static %}
+<link rel="stylesheet" href="/static/about.css">
 </head><span class="material-symbols-outlined">
     <a href=" {% url 'web1' %}">reply</a>
 </span>
@@ -29,48 +13,63 @@
 
 </header>
 
-
 <body>
-
-    <div class="content">
-        {% for de in demi %}
-        <div class="foto-personal"> </div>
-
-        <img src="{{de.imagen}}" alt="">
-        <div class=" content-parrafos ">
-            <h2>{{de.titulo}}</h2>
-            <p>{{de.descripcion}}</p>
-
-        </div>
-    </div>{% endfor %}
-    <!--
-    <div class="content-2 ">
-        <div class="content-parrafos-2 ">
-            <p>En el año 2020 tuve la desafortuna experiencia de perder a mi maddre por un cancer estomacal, el cual fue el peor golpe que padeci. Fue una prueba en todos los niveles, emocional, fisico, psicologico. A la par que me hice cargo de mi hermano
-                menor llamado Bruno, él nacio en el 2007, actualmente tien 16 años y esta cursando la secundaria<a href="https://www.argentino.com.ar/escuela-tecnica-nro-392-juramento-de-la-bandera-egb3-polimodal-F1506C1021DD1 ">(Juramente de la bandera 392)</a>con
-                buenos promedios. Es una gran prueba mas con los tiempos dificiles donde la juventud esta todo el tiempo expuesta al camino facil y rapido, aun asi la importancia del respeto y al transparencia hace que siempre se puedan abordar los problemas
-                de una forma madura y coherente.</p>
-        </div>
-        <div class="fotos-personales-2 "> <img src="C:\Users\PC\Desktop\pagina_web_app\images\IMG_20171012_142843647.jpg " alt=" "></div>
+    <div class="content-parrafos">
+        <img src=" {% static '\images\conalan.jpg' %} " " alt=" "> 
+        <h2>Tenis</h2>
+        <p>Desde el 2005 empecé a jugar tenis y desde ese momento fue un pilar fundamental a nivel psicológico y físico en mi vida. Este deporte me hizo desarrollar una forma de competencia y la vision de uno sobre los problemas que puede dar el enfrentamiento
+            de un oponente mejor que uno y la astucia de poder cambiar el curso de un partido. Una de las fortalezas que más aprecio es la aguantar la presión y lidiar con ella de forma efectiva, esto muy importante en todas las areas de la vida donde
+            muchas veces nos podemos enfrentar a situaciones límites y el hecho de poder manejar nos ayuda a tener la mente objetiva y no dominada por las emociones.</p>
     </div>
-    <div class="content-3 ">
-        <div> <img src="C:\Users\PC\Desktop\pagina_web_app\images\mama-2.png " alt=" "></div>
-        <div class="content-parrafos-3 ">
-            <p>Pues bien, bien este es un pequeño homenaje a la mujer que en su lecho de muerte me dijo.. "pase lo que pase, debes ser fuerte y vanzar cada dia de tu vida ", es un hecho que no podia dejar pasar por alto, su nombre era Norma Perez, mi madre.
-                Una persona que se sacrifico por sus hijos dandole el 100% de su esfuerzo en conseguir todo lo podia en pos de sus hijos.Para todos aquellos que estuvimos a su lado siempre sabemos lo fuerte que fue y por sobre todo la enseñanza que nos
-                dejo, JAMAS RENDIRSE.
+    <div class="content-parrafos ">
+        <img src=" {% static '\images\mama-2.png' %} " " alt="Mi madre">
+        <h2>Mi Madre</h2>
+        <p>En el 2020 tuve la desgracia de perder a mi madre llamada Norma, fue un golpe bastante fuerte pero aun asi las lecciones que impartio fueron de una importyancia incnmensurable la hora de poder encargar las dificultades que presenta la vida, teniendo
+            un buen caracter y determinacion tal com ella lo tenia. Al dia de hoy ya pasado 3 años de este suceso me sigue marcando el camino para nodesviarme del objetivo, segun sus deseos queria que sea ingeniero lo cual es un proyecto que realizare.
+            Por medio de estas lineas solo honro la memoria de ella y la inmortalizare en cada cosa que haga, sin lugar a dudas ella no estara fisicamente pero siempre estara viva en mi corazon.</p>
+    </div>
+    <div class="content-parrafos  ">
+        <img src=" {% static '\images\bruno.JPG' %} " " alt=" ">
+        <h2>Mi hermano</h2>
+        <p>A partir del 2020 empece a cuidar de mi hermano menor, al dia de hoy despues de tantas dificultades él esta estudiando en la secundaria y proyectandose a futuro como veterinario. Fue complejo tratar los sobresaltos por la mencionada partida de  mi madre pero aun asi unidos pudimos superar cada uno de los embates, por eso al dia de hoy no solo me encargo de que tenga el apoyo educacional sino tambien el apoyo emocional, sin lugar a dudas mas que una responsabilidad para mi es un placer poder criar a mi hermano para que un futuro no muy lejano sea una persona de bien. </p>
+    </div>
+    <div class="content-parrafos ">
+        <img src=" {% static '\images\1571924593531.jpg' %} " " alt=" ">
+        <h2>El estudio </h2>
+        <p> Se dice que cada uno tiuene su tiempo de enteder, y asi fue en m i caso. Trde unos años en enteder la importancia del estudio, el cual cuando empece no pude parar hasta el dia de hoy. Realice un curso de prueba en <a href="https://www.fagdut.org.ar/">fagdut </a>luego
+            me inscribi en la escuela supèrior de comercio J.J.Urquiza Nº 49 en donde me recibi de Analista en sistemas, luego de ellos hice varios cursos de machine learning y analisis de datos qu al dia de hoy.En la actualidad estoy deseoso de hacer
+            la carrera de psicologia, el cual es una carrera que me encanta. Se que podria ser contradictorio las carreras elegidas, pero en mi caso no tengo problemas para hacerlo porque al final uno debe hacer lo que ama, y aunque sean opuestas las
+            opciones uno lo hara con una sonrisa.</p>
+    </div>
+    <div class="content-parrafos ">
+        <img src=" {% static '\images\darkseid.jpg' %} " " alt=" ">
+        <h2>Comic </h2>
+        <p>Desde el 2005 empecé a jugar tenis y desde ese momento fue un pilar fundamental a nivel psicológico y físico en mi vida. Este deporte me hizo desarrollar una forma de competencia y la vision de uno sobre los problemas que puede dar el enfrentamiento
+            de un oponente mejor que uno y la astucia de poder cambiar el curso de un partido. Una de las fortalezas que más aprecio es la aguantar la presión y lidiar con ella de forma efectiva, esto muy importante en todas las areas de la vida donde
+            muchas veces nos podemos enfrentar a situaciones límites y el hecho de poder manejar nos ayuda a tener la mente objetiva y no dominada por las emociones.</p>
+    </div>
+    <div class="content-parrafos ">
+        <img src=" {% static '\images\tipos-lectura-social-1662982060.jpg' %} " alt=" ">
+        
+        <h2> Lectura </h2>
+        <p>Es uno de mis mas preciados pasa tiempos, en ellos leo libros de terror, suspenso y accion. Por dia le dedico 1 hora a la lectura. Aprovecho el tiempo que tenga para poder terminar alguna seccion del libro que quisiera terminar. Una parte fundamental
+            de la lectura es la imaginacion sobre los escenarios que presenta el escritor lo cual hace que la lectura sea un viaje mental muy emocionante.</p>
+    </div>
+    <center>
+        <hr>
+    </center>
 
-            </p>
-        </div>
-
-    </div>-->
-    {% endblock %}
-    <hr>
     <footer>
         <center>
             <p>&copy; Gabriel alegre</p>
         </center>
+        <div class="down "></div>
+        <a href="https://www.facebook.com/gabriel.alegre.76 "><img src=" {% static '\images\facebook(1).png' %} " alt="10px "></a>
+        <a href="https://www.instagram.com/gabytns/ "><img src=" {% static '\images\instagram.png' %} " alt="10px "></a>
+
+        <a href="https://www.linkedin.com/in/gabriel-alegre-28b360a9/ "><img src=" {% static '\images\linkedin(1).png' %} " alt="10px "></a>
     </footer>
+
 </body>
 
 </html>

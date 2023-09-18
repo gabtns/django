@@ -9,7 +9,7 @@ https://docs.djangoproject.com/en/4.1/topics/settings/
 For the full list of settings and their values, see
 https://docs.djangoproject.com/en/4.1/ref/settings/
 """
-
+from django.contrib.messages import constants as mesage_constants
 from pathlib import Path
 import os
 
@@ -25,7 +25,7 @@ SECRET_KEY = "django-insecure-j&!#3l6tzejul&*@#c^o5t!@lq6vfshnab*d3p+*p^@w@ecyl)
 
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
-
+MESSAGE_LEVEL = mesage_constants.DEBUG
 ALLOWED_HOSTS = []
 
 
@@ -117,8 +117,9 @@ USE_TZ = True
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/4.1/howto/static-files/
 
-STATIC_URL = "static/"
+STATIC_URL = "/static/"
 MEDIA = "/media/"
+STATIC_ROOT = os.path.join(BASE_DIR,STATIC_URL)
 MEDIA_ROOT = os.path.join(BASE_DIR,'media')
 
 

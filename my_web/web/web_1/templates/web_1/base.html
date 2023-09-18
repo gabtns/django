@@ -8,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="/static/mio.css">
+    <link rel="shortcut icon" href=" {% static '\images\iconos.ico' %} " type="image/x-icon">
 </head>
 
 <body>
@@ -16,8 +17,8 @@
         <ul>
             <li> <a href=" {% url 'about' %}">About</li></a>
                 <li> <a href="{%  url 'formulario' %}">Contactame</li></a>
-                    <li><a href="#">Ideas</li></a>
-                        <li><a href="{% url 'web2' %}">Proyectos</li></a>
+
+                    <li><a href="{% url 'web2' %}">Proyectos</li></a>
         </ul>
     </div>
     <header class="main-header">
@@ -38,7 +39,7 @@
 
     </section>
     <div class="insertar">
-        <div class="triangulo"></div>
+
         <aside class=" definition ">
             <p>Me llamo Gabriel Alegre soy de Rosario,StaFe,Argentina.En el año 2022 me recibi como analista funcional de sistema informaticos y me dedique aprender la ciencia de datos y programacion en python. Durante este tiempo realice algunas aplicaciones
                 de escritorios como calculadoras y blog de notas en PyQT5, ademas de realizar muchos analisis de datos utilizando machine learning al utilizar datos para predecir comportamientos lo cual lo hice con Google colab. En ultima instancia estoy
@@ -47,12 +48,16 @@
     </div>
     <div class="circle"></div>
     <hr>
-    <footer>
+    <footer class="bajo">
         <center>
             <p>&copy; Gabriel alegre</p>
         </center>
-        <img src="C:\Users\PC\Desktop\pagina_web_app\images\linkedin.png" alt="">
-        <img src="C:\Users\PC\Desktop\pagina_web_app\images\facebook.png" alt="">
+
+        <a href="https://www.facebook.com/gabriel.alegre.76"><img src=" {% static '\images\facebook(1).png' %} " alt="10px "></a>
+        <a href="https://www.instagram.com/gabytns/"><img src=" {% static '\images\instagram.png' %} " alt="10px "></a>
+
+        <a href="https://www.linkedin.com/in/gabriel-alegre-28b360a9/"><img src=" {% static '\images\linkedin(1).png' %} " alt="10px "></a>
+
     </footer>
 </body>
 

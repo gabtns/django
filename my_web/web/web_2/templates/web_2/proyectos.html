@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es">{% load static %} {% block content %}
 
 <head>
     <meta charset="UTF-8">
@@ -7,12 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Blog Personal</title>
     <link rel="stylesheet" href="/static/proyectos.css">
-    <link rel="shortcut icon" href="C:\Users\PC\Desktop\pagina_web_app\images\colab.ico" type="image/x-icon">
+    <link rel="shortcut icon" href=" {% static '\images\colab.ico' %} " type="image/x-icon">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,600,0,200" />
 </head>
 
-{% load static %} {% block content %}
+
 
 <span class="material-symbols-outlined">
     <a href=" {% url 'web1' %}">reply</a>
@@ -28,8 +28,10 @@
 <body>
 
     <section class="posts">
-        <h2>En esta seccion se pueden ver los proyectos realizados, donde se pueden desde el google colab y por el Git Hub. Muchos de estos trabajos fueron desarrollados con anterioridad pero era necesario mostrarlos en esta aplicacion donde no solo se pueden
-            observar los trabajos de analisis de datos sino tambien el trabajo realizado en la parte del "cliente", el Frontend. </h2>
+        <center>
+            <h2>En esta seccion se pueden ver los proyectos realizados, donde se pueden desde el google colab y por el Git Hub. Muchos de estos trabajos fueron desarrollados con anterioridad pero era necesario mostrarlos en esta aplicacion donde no solo se
+                pueden observar los trabajos de analisis de datos sino tambien el trabajo realizado en la parte del "cliente", el Frontend. </h2>
+        </center>
         {% for i in modelo %}
 
 
@@ -46,15 +48,12 @@
                 <p> {{i.descripcion}}</p>
                 <p>Publicado el : {{i.created | date:"SHORT_DATE_FORMAT"}}</p>
             </center>
-
-
-
         </div>
         <a class="blogs-btn" href="{{i.url}} ">Colab</a>
         <a class="blogs-btn" href="{{i.url_git}} ">Git Hub</a>
 
     </section>
-    {% endfor%} {% endblock %}
+    {% endfor%}
 
     <footer>
 
@@ -63,4 +62,4 @@
         </center>
 
     </footer>
-</body>
+</body>{% endblock %}

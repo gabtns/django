@@ -36,7 +36,7 @@ Social*/
     
     .header {
         margin-top: 0%;
-        margin-bottom: 5%;
+        margin-bottom: 1%;
     }
     
     .title h2 {
@@ -56,7 +56,7 @@ Social*/
         padding-left: 6%;
         padding-top: 1%;
         margin-top: 0%;
-        margin-bottom: 8%;
+        margin-bottom: 4%;
     }
     
     .colab img {
@@ -87,7 +87,8 @@ Social*/
     .posts {
         color: white;
         display: inline;
-        margin-bottom: 5%;
+        margin-bottom: 2%;
+        font-family: Arial, Helvetica, sans-serif;
     }
     
     .a:hover {
@@ -124,7 +125,6 @@ Social*/
     
     .blogs-btn {
         text-decoration: none;
-        color: #000;
         border: 1px solid #e6162e;
         padding: 10px 15px;
         font-size: 14px;
@@ -141,7 +141,7 @@ Social*/
     
     .posts h2 {
         color: #fff;
-        padding-bottom: 5%;
+        padding-bottom: 2%;
     }
     
     .posts h3 {
@@ -153,8 +153,9 @@ Social*/
         display: inline-flexbox;
         padding: 10px;
         max-width: 32%;
-        margin-top: 5%;
+        margin-top: 2%;
         margin-bottom: 20px;
+        font-family: Arial, Helvetica, sans-serif;
     }
     
     .posts-blog img {
@@ -167,12 +168,8 @@ Social*/
     }
     
     .posts-blog h2 {
-        color: #fff;
-        margin: 20px 0;
-    }
-    
-    .posts-blog h4 {
-        color: #fff;
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: xx-large;
         margin: 20px 0;
     }
     
@@ -180,7 +177,7 @@ Social*/
         color: #fff;
         margin-bottom: 35px;
         padding-top: 5%;
-        font-weight: 500;
+        font-weight: 300;
         font-size: x-large;
     }
     
